@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.container{
+    max-width:  1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+
+}
+
+.menu{
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+}
+.menu-group-heading{
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
+.menu-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1.5em;
+    padding: 1.5em 0;
+}
+.menu-item{
+    display: flex;
+}
+.menu-item-image{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+.menuItemText{
+    flex-grow: 1;
+}
+.menuItemHeading{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.menuItemName{
+    margin-right:1.5em;
+}
+.meniuItemDesc{
+   line-height: 1.6; 
+}
+
+
+@media screen and (min-width:992px) {
+    .menu{
+        font-size: 16px;
+    }
+    .menu-group{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .menu-item-image{
+    width:125px;
+    height: 125px;
+}
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h2 class="menu-group-heading">
+               MENU
+            </h2>
+            <div class="menu-group">
+               <div class="menu-item">
+                  <img class="menu-item-image" src="../americano.jpeg" alt="AMERICANO" >
+                   <div class="menuItemText">
+                    <h3 class="menuItemHeading">
+                        <span class="menuItemName">AMERICANO</span> 
+                        <span class="menuItemPrice">$20</span> 
+                    </h3>
+                    <p class="menuItemDesc">
+                        An Americano is a classic espresso-style drink with a smooth and well-rounded flavor. 
+                    </p>
+                   </div>  
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="../black.jpeg" alt="BLACK COFFEE" >
+                     <div class="menuItemText">
+                      <h3 class="menuItemHeading">
+                          <span class="menuItemName">BLACK COFFEE</span> 
+                          <span class="menuItemPrice">$18</span> 
+                      </h3>
+                      <p class="menuItemDesc">
+                        t's unique, it's smooth, it's nothing like the ashy coffee of old.Now, black coffee can have notes of berries, spices, flowers, and beyond.                      </p>
+                     </div>  
+                  </div>
+                  <div class="menu-item">
+                    <img class="menu-item-image" src="../espresso.jpeg" alt="ESPRESSO" >
+                     <div class="menuItemText">
+                      <h3 class="menuItemHeading">
+                          <span class="menuItemName">ESPRESSO</span> 
+                          <span class="menuItemPrice">$22</span> 
+                      </h3>
+                      <p class="menuItemDesc">
+                        chocolatey or nutty base, and a smooth finish.   
+                    </p>
+                     </div>  
+                  </div>
+                  <div class="menu-item">
+                    <img class="menu-item-image" src="../cappuccino.jpeg" alt="cappuccino" >
+                     <div class="menuItemText">
+                      <h3 class="menuItemHeading">
+                          <span class="menuItemName">CAPPUCCINO</span> 
+                          <span class="menuItemPrice">$25</span> 
+                      </h3>
+                      <p class="menuItemDesc">
+                        cappuccino maintains a strong coffee flavor with a more pronounced milky sweetness.
+                      </p>
+                     </div>  
+                  </div>
+                  
+                  <div class="menu-item">
+                    <img class="menu-item-image" src="../latte.jpg" alt="LATTE" >
+                     <div class="menuItemText">
+                      <h3 class="menuItemHeading">
+                          <span class="menuItemName">LATTE</span> 
+                          <span class="menuItemPrice">$22</span> 
+                      </h3>
+                      <p class="menuItemDesc">
+                        The coffee flavor is still there, but it's heavily masked by the sweet milk, making the latte a top pick for newer coffee lovers.  
+                    </p>
+                     </div>  
+                  </div>
+                  <div class="menu-item">
+                    <img class="menu-item-image" src="../mocha.jpeg" alt="MOCHA" >
+                     <div class="menuItemText">
+                      <h3 class="menuItemHeading">
+                          <span class="menuItemName">MOCHA</span> 
+                          <span class="menuItemPrice">$22</span> 
+                      </h3>
+                      <p class="menuItemDesc">
+                        It is said that a mocha tastes like a chocolatey coffee. Whilst this is true, a mocha is so much more than that. Where the espresso shot offers an almost bitter taste, the chocolate combination creates a sweetness to create a velvety smooth, luxurious beverage.
+                      </p>
+                     </div>  
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
